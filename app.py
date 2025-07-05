@@ -11,7 +11,7 @@ CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 # Use environment variable for redirect URI to support different deployment environments
 # For Replit, we need to use the proper domain
-REDIRECT_URI = os.getenv("REDIRECT_URI", f"https://{os.getenv('REPLIT_DEV_DOMAIN', 'localhost:5000')}/callback")
+REDIRECT_URI = "https://flitster-production.up.railway.app/callback"
 
 AUTH_URL = "https://accounts.spotify.com/authorize"
 TOKEN_URL = "https://accounts.spotify.com/api/token"
